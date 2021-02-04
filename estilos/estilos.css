@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #eeeeee;
+    color: #000000;
+    font-family: Century Gothic,'Roboto', sans-serif;
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: 1fr 2.4fr;
+	grid-template-rows: repeat(4, auto);
+    grid-template-areas:    "aside 	header 		header"
+                            "aside 	nav 	    nav"
+                            "aside 	main 	    main"
+                            "aside 	footer 		footer"
+}
+aside{
+    background: #4444ff; 
+    grid-area: aside;
+    padding: 5%;
+    font-size: 18px;
+    padding-top: 110%;
+    z-index: 1;
+}
+main{
+    background: #f1f1f1;
+    grid-area: main;
+    padding-left: 5%;
+}
+header{
+    background: #999999;
+    /*grid-area: header;*/
+    grid-area: 1/1/2/4;
+    margin-top: 3%;
+    text-align: right;
+    padding-right: 2%;
+    z-index: 2;
+    height: 40%;
+    overflow:visible;
+}
+img{ /*pagina 158: fload*/
+    float: left;
+    width: 20%;
+    padding-left: 5.5%;
+    z-index: 3;
+}
+nav{
+    background: rgb(8, 179, 185);
+    grid-area: nav;
+    margin-top: 0; 
+}
+footer{
+    background: rgb(8, 179, 185);
+    grid-area: footer; 
+    padding: 5%;
+    text-align: center;
+}
+ul{ 
+    list-style-type: none;
+  }
+.datospersonales table {
+    font-style: italic;
+}
+.row {
+    font-weight: 700;
+    width: 25%;
+}
+.year, .place {
+    width: 25%;
+}
+table, h2 {
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.year{
+    font-size: 23px;
+}
+.title{
+    font-size: 18px;
+}
+.institution{
+    font-size: 20px;
+    font-style: italic;
+}
+div, section{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+aside li, .perfil > h1+p, footer p:first-child {
+    padding-bottom: 1em;
+}
