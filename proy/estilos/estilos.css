@@ -1,66 +1,77 @@
-*{
+.principal {
     margin: 0;
     padding: 0;
-}
-body {
-    background: #eeeeee;
-    color: #000000;
+    background:#fff;
+    color: #2c698d;
     font-family: Century Gothic,'Roboto', sans-serif;
 	display: grid;
 	grid-gap: 0;
 	grid-template-columns: 1fr 2.4fr;
 	grid-template-rows: repeat(4, auto);
     grid-template-areas:    "aside 	header 		header"
-                            "aside 	nav 	    nav"
+                            "aside 	header 		header"
                             "aside 	main 	    main"
                             "aside 	footer 		footer"
 }
 aside{
-    background: #4444ff; 
+    background: #272643; 
     grid-area: aside;
     padding: 5%;
     font-size: 18px;
     padding-top: 110%;
     z-index: 1;
+    color:#fff;
 }
 main{
-    background: #f1f1f1;
+    background:#e3f6f5;
     grid-area: main;
     padding-left: 5%;
+    color: #272643;
 }
-header{
-    background: #999999;
-   
+h1 {
+    padding-top: .7em;
+    padding-bottom: .5em;
+    color:#2c698d;
+    font-size: 24px;
+}
+header {
+    background: #bae8e8;
     grid-area: 1/1/2/4;
     margin-top: 3%;
     text-align: right;
     padding-right: 2%;
     z-index: 2;
-    height: 40%;
+    height: auto;
+    max-height: 130px;
     overflow:visible;
 }
-img{ 
+header h1+p {
+    color: #272643;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.principal img{ 
     float:left;
-    width: 20%;
+    width: 150px;
     padding-left: 5.5%;
     z-index: 3;
 }
-nav{
-    background: rgb(8, 179, 185);
-    grid-area: nav;
-    margin-top: 0; 
-}
+
 footer{
-    background: rgb(8, 179, 185);
+    background:#2c698d;
     grid-area: footer; 
     padding: 5%;
     text-align: center;
+    color:#ffffff;
 }
-ul{ 
+.principal ul{ 
     list-style-type: none;
   }
 .datospersonales table {
     font-style: italic;
+}
+.datospersonales td.row{
+    width: 35%;
 }
 .row {
     font-weight: 700;
@@ -69,15 +80,14 @@ ul{
 .year, .place {
     width: 25%;
 }
-table, h2 {
-    padding-top: 1.2em;
-    padding-bottom: 1em;
-    width: 100%;
+.principal table, h2 {
+    padding-top: .5em;
+    padding-bottom: .3em;
+    width: 100%;  
 }
-h1 {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
+.principal h2{color: #2c698d;
+    font-style: italic;
+    font-size: 22px}
 .year{
     font-size: 23px;
 }
@@ -88,10 +98,13 @@ h1 {
     font-size: 20px;
     font-style: italic;
 }
-div, section{
-    padding-top: 1em;
-    padding-bottom: 1em;
+.principal div, section{
+    padding-top: .7em;
+    padding-bottom: .7em;
 }
 aside li, .perfil > h1+p, footer p:first-child {
-    padding-bottom: 1em;
+    padding-bottom: .7em;
 }
+#sidebar ul li.pr{
+    color:#fff
+  }

@@ -1,0 +1,113 @@
+.principal {
+    margin: 0;
+    padding: 0;
+    background:#fff;
+    color: #2c698d;
+    font-family: Century Gothic,'Roboto', sans-serif;
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: 1fr 2.4fr;
+	grid-template-rows: repeat(4, auto);
+    grid-template-areas:    "aside 	header 		header"
+                            "aside 	header 		header"
+                            "aside 	main 	    main"
+                            "aside 	footer 		footer"
+}
+aside{
+    background: #272643; 
+    grid-area: aside;
+    padding: 5%;
+    font-size: 18px;
+    padding-top: 110%;
+    z-index: 1;
+    color:#fff;
+}
+main{
+    background:#e3f6f5;
+    grid-area: main;
+    padding-left: 5%;
+    color: #272643;
+}
+h1 {
+    padding-top: .7em;
+    padding-bottom: .5em;
+    color:#2c698d;
+    font-size: 24px;
+}
+header {
+    background: #bae8e8;
+    grid-area: 1/1/2/4;
+    margin-top: 3%;
+    text-align: right;
+    padding-right: 2%;
+    z-index: 2;
+    height: auto;
+    max-height: 130px;
+    overflow:visible;
+}
+header h1+p {
+    color: #272643;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.principal img{ 
+    float:left;
+    width: 150px;
+    padding-left: 5.5%;
+    z-index: 3;
+}
+
+footer{
+    background:#2c698d;
+    grid-area: footer; 
+    padding: 5%;
+    text-align: center;
+    color:#ffffff;
+}
+.principal ul{ 
+    list-style-type: none;
+  }
+.datospersonales table {
+    font-style: italic;
+}
+.datospersonales td.row{
+    width: 35%;
+}
+.row {
+    font-weight: 700;
+    width: 25%;
+}
+.year, .place {
+    width: 25%;
+}
+.principal table, h2 {
+    padding-top: .5em;
+    padding-bottom: .3em;
+    width: 100%;  
+}
+.principal h2{color: #2c698d;
+    font-style: italic;
+    font-size: 22px}
+.year{
+    font-size: 23px;
+}
+.title{
+    font-size: 18px;
+}
+.institution{
+    font-size: 20px;
+    font-style: italic;
+}
+.principal div, section{
+    padding-top: .7em;
+    padding-bottom: .7em;
+}
+aside li, .perfil > h1+p, footer p:first-child {
+    padding-bottom: .7em;
+}
+
+#sidebar ul li.cv{
+    color:#fff
+  }
+
+  
