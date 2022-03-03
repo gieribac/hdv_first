@@ -1,110 +1,131 @@
 .principal {
-    margin: 0;
-    padding: 0;
-    background:#fff;
-    color: #2c698d;
-    font-family: Century Gothic,'Roboto', sans-serif;
-	display: grid;
-	grid-gap: 0;
-	grid-template-columns: 1fr 2.4fr;
-	grid-template-rows: repeat(4, auto);
-    grid-template-areas:    "aside 	header 		header"
-                            "aside 	header 		header"
-                            "aside 	main 	    main"
-                            "aside 	footer 		footer"
-}
-aside{
-    background: #272643; 
-    grid-area: aside;
-    padding: 5%;
-    font-size: 18px;
-    padding-top: 110%;
-    z-index: 1;
-    color:#fff;
-}
-main{
-    background:#e3f6f5;
-    grid-area: main;
-    padding-left: 5%;
-    color: #272643;
-}
-h1 {
-    padding-top: .7em;
-    padding-bottom: .5em;
-    color:#2c698d;
-    font-size: 24px;
-}
-header {
-    background: #bae8e8;
-    grid-area: 1/1/2/4;
-    margin-top: 3%;
-    text-align: right;
-    padding-right: 2%;
-    z-index: 2;
+    background: #e3f6f5;
+    text-align: center;
+    box-sizing:border-box;
+    width: 100%;
     height: auto;
-    max-height: 130px;
-    overflow:visible;
-}
-header h1+p {
-    color: #272643;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.principal img{ 
-    float:left;
-    width: 150px;
-    padding-left: 5.5%;
-    z-index: 3;
+    color:#272643;
+  font-family: Century Gothic,'Roboto', sans-serif;
+  padding: 3% 7%;
 }
 
-footer{
-    background:#2c698d;
-    grid-area: footer; 
-    padding: 5%;
-    text-align: center;
-    color:#ffffff;
+.title_ {
+    color:#2c698d
 }
-.principal ul{ 
-    list-style-type: none;
+.principal {box-sizing: border-box}
+.principal body {font-family: Verdana, sans-serif; margin:0}
+.principal .mySlides1 , .principal .mySlides2 {
+    display: none;
+    max-height: 1100px;
+    overflow: auto;
+    border: 2px solid #272643; 
+    border-radius: 5px;        
+    scrollbar-color:#272643 #2c698d;
+    scrollbar-width: 5px;
+}
+
+.principal img {vertical-align: middle;}
+
+/* Slideshow container */
+.principal .slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto; 
+}
+
+/* Next & previous buttons */
+.principal .prev, .principal .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the buttons*/
+.principal .next {
+  right: 20px;
+  border-radius: 3px 0 0 3px;
+}
+
+.principal .prev {
+    left: 3px;
+    border-radius: 3px 0 0 3px;
   }
-.datospersonales table {
-    font-style: italic;
+
+/* On hover, add a black background color with a little bit see-through */
+.principal .prev:hover, .principal .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
-.datospersonales td.row{
-    width: 35%;
+
+/* Caption text */
+.principal .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
-.row {
-    font-weight: 700;
-    width: 25%;
+
+/* Number text (1/3 etc) */
+.principal .numbertext {
+  color: #2c698d;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
-.year, .place {
-    width: 25%;
+
+/* The dots/bullets/indicators */
+.principal .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-.principal table, h2 {
-    padding-top: .5em;
-    padding-bottom: .3em;
-    width: 100%;  
+
+.principal .active, .principal .dot:hover {
+  background-color: #717171;
 }
-.principal h2{color: #2c698d;
-    font-style: italic;
-    font-size: 22px}
-.year{
-    font-size: 23px;
+
+/* Fading animation */
+.principal .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-.title{
-    font-size: 18px;
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
-.institution{
-    font-size: 20px;
-    font-style: italic;
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
-.principal div, section{
-    padding-top: .7em;
-    padding-bottom: .7em;
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
-aside li, .perfil > h1+p, footer p:first-child {
-    padding-bottom: .7em;
-}
+
 #sidebar ul li.cert{
-    color:#fff
-  }
+  color:#e3f6f5
+ }
+
+

@@ -9,9 +9,15 @@
 	grid-template-columns: 1fr 2.4fr;
 	grid-template-rows: repeat(4, auto);
     grid-template-areas:    "aside 	header 		header"
-                            "aside 	header 		header"
+                            "aside 	nbar 		nbar"
                             "aside 	main 	    main"
                             "aside 	footer 		footer"
+}
+.nbar {
+    grid-area: nbar;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
 aside{
     background: #272643; 
@@ -110,4 +116,24 @@ aside li, .perfil > h1+p, footer p:first-child {
     color:#fff
   }
 
+  @media only screen and (min-width : 321px) and (orientation: portrait) {
+    .principal {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 1fr 2.4fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:    "header 	header 		header"
+                                "nbar	    nbar 		nbar"
+                                "aside      aside       aside"
+                                "main	    main 	    main"
+                                "footer	    footer 		footer"
+    }
+    .principal img{ 
+        display:absolute;
+        margin-left: 35%;
+        margin-top: 30%;
+        
+    }
+    }
+    
   

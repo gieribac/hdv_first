@@ -1,0 +1,44 @@
+.nbar {
+    margin: 2px auto;
+    text-align: center;
+    height: 4rem;
+    width:min-content; 
+ 
+}
+.nbar ul {
+    list-style-type: none;
+    padding: 8px 0;
+    width: max-content;
+    background-color: #bae8e8;
+    display: flex;
+    align-items: center;
+    border-radius: 5%;
+    padding: auto;
+    
+    
+  }
+
+.nbar ul li { 
+    height: auto;
+    border-radius: 5px;
+}
+.nbar li a {
+    width: 100%;
+    color: #272643;
+    padding: 8px;
+    text-decoration: underline;
+    border-radius: 5px;
+  }
+  
+.nbar li a.active {
+    background-color: #272643;
+    color: #e3f6f5;
+    border-radius: 5px;
+  }
+  
+.nbar li a:hover:not(.active) {
+    background-color: #272643;
+    color: #bae8e8;
+    border-radius: 5px;
+    width: 100%
+  }

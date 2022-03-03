@@ -12,6 +12,7 @@
   transition: all 500ms linear;
   margin-top: 0px;
   display: inline;
+  font-family: Century Gothic,'Roboto', sans-serif;
 }
 
 #sidebar.active {
@@ -67,7 +68,8 @@
 
 }
 #sidebar.active .toggle-btn span {
-opacity:  0.3;}
+opacity:  0.3;
+transform: rotate(90deg)}
 
 #sidebar .toggle-btn span {
   display: block;
@@ -77,6 +79,7 @@ opacity:  0.3;}
   margin: 0px;
   padding: 0px;
   cursor: pointer;
+  transition: all 500ms linear;
 }
 
 .contenido {
