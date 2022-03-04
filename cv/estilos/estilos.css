@@ -112,9 +112,6 @@ aside li, .perfil > h1+p, footer p:first-child {
     padding-bottom: .7em;
 }
 
-#sidebar ul li.cv{
-    color:#fff
-  }
 
   @media only screen and (min-width : 321px) and (orientation: portrait) {
     .principal {

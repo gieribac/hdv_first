@@ -20,6 +20,9 @@
   width: 200px;
 }
 
+.actual{
+  color:#fff
+}
 #sidebar ul {
   padding-right: 30px;
 }
@@ -82,14 +85,23 @@ transform: rotate(90deg)}
   transition: all 500ms linear;
 }
 
+#sidebar ul li.actual{
+  color:#fff
+}
+
 .contenido {
   position: absolute;
   left: 38px;
   transition: all 500ms linear;
+  width: 97.5%
+  
 }
 .contenido.active {
   position: absolute;
   left: 200px;
+  width: 85.5%
+  
+
 }
 
 

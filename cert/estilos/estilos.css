@@ -9,6 +9,7 @@
   padding: 3% 7%;
 }
 
+
 .title_ {
     color:#2c698d
 }
@@ -123,9 +124,5 @@
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-
-#sidebar ul li.cert{
-  color:#e3f6f5
- }
 
 
