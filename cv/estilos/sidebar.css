@@ -36,15 +36,15 @@
   
   text-align: center;
 }
-#sidebar ul li a{
-  
-  color: #272643;
-}
+#sidebar ul li a{ color: #272643}
 .logo {
   border-radius:50%;
   display: block;
   margin: 0 auto; 
   width: 108px;
+  border-style: solid;
+  border-color: #bae8e8;
+
 }
 
 #sidebar .toggle-btn {
@@ -53,7 +53,6 @@
   top: 0px;
   text-align: center;
   height: 40px;
-  background: #2c698d;
   margin: 0px;
   padding: 0px;
   
@@ -64,11 +63,8 @@
   top: 0px;
   cursor: pointer;
   width: 40px;
-  background: #2c698d;
   margin: 0px;
-  padding: 0px;
-  
-
+  padding: 0px
 }
 #sidebar.active .toggle-btn span {
 opacity:  0.3;
@@ -100,8 +96,14 @@ transform: rotate(90deg)}
   position: absolute;
   left: 200px;
   width: 85.5%
-  
-
 }
+
+#sidebar ul li a:hover {
+  background-color: #bae8e8;
+  color:#464583 ;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 110%;
+} 
 
 

@@ -1,22 +1,21 @@
 .nbar {
-    margin: 2px auto;
+    margin: 0 auto;
     text-align: center;
-    height: 4rem;
-    width:min-content; 
- 
+    height: 3rem;
+    width:min-content;  
+    font-size: 80%;
+    display:block;
 }
 .nbar ul {
     list-style-type: none;
     padding: 8px 0;
     width: max-content;
-    background-color: #bae8e8;
     display: flex;
     align-items: center;
     border-radius: 5%;
-    padding: auto;
-    
-    
+    padding: auto  
   }
+
 
 .nbar ul li { 
     height: auto;
@@ -24,21 +23,18 @@
 }
 .nbar li a {
     width: 100%;
-    color: #272643;
     padding: 8px;
     text-decoration: underline;
+    font-style: italic;
     border-radius: 5px;
+    background-color: #bae8e8;
+    color:#272643;
   }
-  
-.nbar li a.active {
-    background-color: #272643;
-    color: #e3f6f5;
+ 
+.nbar li a:hover {
     border-radius: 5px;
-  }
-  
-.nbar li a:hover:not(.active) {
-    background-color: #272643;
+    width: 100%;
+    font-size: 120%;
+    background-color:#2c698d;
     color: #bae8e8;
-    border-radius: 5px;
-    width: 100%
-  }
+  } 

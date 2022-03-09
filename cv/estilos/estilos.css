@@ -2,38 +2,51 @@
     margin: 0;
     padding: 0;
     background:#fff;
-    color: #2c698d;
     font-family: Century Gothic,'Roboto', sans-serif;
 	display: grid;
 	grid-gap: 0;
 	grid-template-columns: 1fr 2.4fr;
 	grid-template-rows: repeat(4, auto);
     grid-template-areas:    "aside 	header 		header"
-                            "aside 	nbar 		nbar"
+                            "aside 	main 		main"
                             "aside 	main 	    main"
-                            "aside 	footer 		footer"
+                            "footer	footer 		footer"
 }
-.nbar {
-    grid-area: nbar;
-    display: flex;
-  align-items: center;
-  justify-content: center;
+
+.pnbar{
+    background-color: #fff;
+    width:100%;
+    margin:0 auto;
+    float:left;
+    position: left;
+    height:6em;
+    text-align: center;
+
+}
+
+.phv {
+    padding:4%;
+} 
+
+.datospersonales {
+    padding-top:18%;
 }
 aside{
     background: #272643; 
     grid-area: aside;
-    padding: 5%;
+    padding: 3%;
     font-size: 18px;
     padding-top: 110%;
     z-index: 1;
     color:#fff;
 }
+
 main{
     background:#e3f6f5;
     grid-area: main;
-    padding-left: 5%;
     color: #272643;
 }
+
 h1 {
     padding-top: .7em;
     padding-bottom: .5em;
@@ -42,33 +55,43 @@ h1 {
 }
 header {
     background: #bae8e8;
-    grid-area: 1/1/2/4;
-    margin-top: 3%;
-    text-align: right;
+    grid-area: 1/1/1/3;
+    margin: 2% 0;
+    padding-left:30%;
     padding-right: 2%;
     z-index: 2;
     height: auto;
     max-height: 130px;
     overflow:visible;
+    text-align: center;
+}
+
+header h1 {
+    color: #272643;
+    font-size: 180%
 }
 header h1+p {
-    color: #272643;
+    color: #2c698d;
     padding-top: 0;
     padding-bottom: 0;
 }
-.principal img{ 
-    float:left;
-    width: 150px;
-    padding-left: 5.5%;
+.foto { 
+    grid-area: 1/1/3/2;
+    width: 75%;
+    margin: 5% auto;
+    top:0;
     z-index: 3;
+    border-radius:20%;
+    border-style: solid;
+    border-color: #e3f6f5;
 }
 
 footer{
-    background:#2c698d;
+    background:#ffffff;
     grid-area: footer; 
     padding: 5%;
     text-align: center;
-    color:#ffffff;
+    color:#2c698d;
 }
 .principal ul{ 
     list-style-type: none;
@@ -91,7 +114,8 @@ footer{
     padding-bottom: .3em;
     width: 100%;  
 }
-.principal h2{color: #2c698d;
+.principal h2{
+    color: #2c698d;
     font-style: italic;
     font-size: 22px}
 .year{
@@ -112,7 +136,6 @@ aside li, .perfil > h1+p, footer p:first-child {
     padding-bottom: .7em;
 }
 
-
   @media only screen and (min-width : 321px) and (orientation: portrait) {
     .principal {
         display: grid;
@@ -125,12 +148,6 @@ aside li, .perfil > h1+p, footer p:first-child {
                                 "main	    main 	    main"
                                 "footer	    footer 		footer"
     }
-    .principal img{ 
-        display:absolute;
-        margin-left: 35%;
-        margin-top: 30%;
-        
-    }
-    }
+}
     
   
