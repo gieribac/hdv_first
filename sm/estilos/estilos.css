@@ -2,7 +2,7 @@
     background: #bae8e8;
     box-sizing:border-box;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     color:#272643;
     font-family: Century Gothic,'Roboto', sans-serif;
     display: flex;
@@ -14,8 +14,10 @@
 h1 {
   padding-top: 3%;
   color: #2c698d;
+  height:auto;
 } 
 .invitation {padding: 2% 0;
+  height:auto;
 } 
 
 .alt_ {
