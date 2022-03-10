@@ -6,7 +6,7 @@
 #sidebar {
   position: fixed;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   background: #2c698d;
   left: -160px;
   transition: all 500ms linear;
@@ -89,13 +89,13 @@ transform: rotate(90deg)}
   position: absolute;
   left: 38px;
   transition: all 500ms linear;
-  width: 97.5%
+  /* width: 97.5% */
   
 }
 .contenido.active {
   position: absolute;
   left: 200px;
-  width: 85.5%
+  /* width: 85.5% */
 }
 
 #sidebar ul li a:hover {
@@ -106,4 +106,14 @@ transform: rotate(90deg)}
   font-size: 110%;
 } 
 
+/* @media only screen and (max-width: 480px){
+  #sidebar .toggle-btn span {
+    font-size: 90px;
+    width: 120px;
+  }
+  #sidebar .toggle-btn {
+    height: 120px;
+    width:300%;
+  }
+} */
 
