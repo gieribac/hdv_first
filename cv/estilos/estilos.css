@@ -136,7 +136,7 @@ aside li, .perfil > h1+p, footer p:first-child {
     padding-bottom: .7em;
 }
 
-@media only screen and (min-width : 480px) and (orientation: portrait) {
+/* @media only screen and (min-width : 480px) and (orientation: portrait) {
     .principal {
         display: grid;
         grid-gap: 0;
@@ -150,13 +150,13 @@ aside li, .perfil > h1+p, footer p:first-child {
     }
 
     aside{padding-top:0}
-}
-/* @media only screen and (max-width: 480px) and (orientation: portrait){
+} */
+@media only screen and (max-width: 480px) and (orientation: portrait){
     .principal {
         overflow:inherit;
         
         display: grid;
-        width: 75vw;  
+        width: 100%;  
         grid-gap: 0;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
@@ -210,8 +210,8 @@ aside li, .perfil > h1+p, footer p:first-child {
     }
     .institution{
         font-size: 10px;
-    
-} */
-
-
-  
+    } 
+    .pnbar{
+        background-color: #e3f6f5;
+    }
+}
